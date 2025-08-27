@@ -12,6 +12,9 @@ curl -s -X POST localhost:8080/v1/tasks \
 
 ### Get / List / Update / Delete
 curl -s localhost:8080/v1/tasks/t1
+
 curl -s localhost:8080/v1/tasks
+
 curl -s -X PUT localhost:8080/v1/tasks/t1 -H "Content-Type: application/json" -d '{"title":"Write Go blog","status":"doing"}'
+
 curl -i -X DELETE localhost:8080/v1/tasks/t1
